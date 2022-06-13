@@ -72,8 +72,8 @@
       <div class="keywords-list">
         <div class="keywords-item" v-for="(item,index) in articleInfo.keyWord" :key="index">
           <!-- todo 暂时不跳回搜索页面,有需要的话外面套一层a标签即可 -->
-          <!--          <a href="/search/pub?q=Cloud manufacturing">{{ item }}</a>-->
-          {{ item }}
+          <a :href="'/ida/all/findallbyanywords?words='+item">{{ item }}</a>
+<!--          {{ item }}-->
         </div>
       </div>
     </div>
